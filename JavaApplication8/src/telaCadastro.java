@@ -71,8 +71,6 @@ public class telaCadastro extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel3.setBackground(new java.awt.Color(255, 102, 204));
-
         campoNome.setBackground(new java.awt.Color(255, 102, 204));
         campoNome.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         campoNome.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nome", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
