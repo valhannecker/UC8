@@ -1,11 +1,13 @@
 import modelo.Produto;
 import Banco.BancoProduto;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.JOptionPane;
 
 
 public class ConsultaProdutos extends javax.swing.JInternalFrame {
-    
+    private int idSelecionado = 0;
     private void carregarProdutos(){
+        
     DefaultTableModel modelo = new DefaultTableModel();
     String pesquisa = txtPesquisa.getText().toLowerCase();
     modelo.addColumn("Codigo");
@@ -41,8 +43,8 @@ private static final java.util.logging.Logger logger = java.util.logging.Logger.
     txtValor.setText("");
     txtQuantidade.setText("");
     txtPesquisa.setText("");
-
     idSelecionado = 0;
+    
 
     txtDescricao.requestFocus();
 }
@@ -82,6 +84,7 @@ private static final java.util.logging.Logger logger = java.util.logging.Logger.
 
         buttonGroup1.add(rbDescricao);
         rbDescricao.setForeground(new java.awt.Color(255, 255, 255));
+        rbDescricao.setSelected(true);
         rbDescricao.setText("Descricao");
 
         rbId.setForeground(new java.awt.Color(255, 255, 255));
@@ -248,7 +251,7 @@ private static final java.util.logging.Logger logger = java.util.logging.Logger.
 
     carregarProdutos();
     limparCampos();
-}
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void TabelaProdutoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TabelaProdutoMouseClicked
@@ -281,6 +284,7 @@ private static final java.util.logging.Logger logger = java.util.logging.Logger.
     }//GEN-LAST:event_TabelaProdutoMouseClicked
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    
     if (idSelecionado == 0) {
 
         JOptionPane.showMessageDialog(
@@ -310,7 +314,7 @@ private static final java.util.logging.Logger logger = java.util.logging.Logger.
                     null,
                     "Produto atualizado!");
 
-            carregarProduto();
+            carregarProdutos();
             limparCampos();
 
             idSelecionado = 0;
@@ -352,7 +356,7 @@ private static final java.util.logging.Logger logger = java.util.logging.Logger.
                         null,
                         "Produto removido!");
 
-                carregarProduto();
+                carregarProdutos();
                 limparCampos();
 
                 idSelecionado = 0;
