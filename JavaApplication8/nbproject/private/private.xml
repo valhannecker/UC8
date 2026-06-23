@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/git/UC8/JavaApplication8/src/ConsultaProdutos.java</file>
-            <file>file:/C:/git/UC8/JavaApplication8/src/Banco/BancoProduto.java</file>
+            <file>file:/C:/git/UC8/JavaApplication8/src/ConsultaCliente.java</file>
             <file>file:/C:/git/UC8/JavaApplication8/src/Principal.java</file>
+            <file>file:/C:/git/UC8/JavaApplication8/src/ConsultaProdutos.java</file>
+            <file>file:/C:/git/UC8/JavaApplication8/src/Banco/BancoCliente.java</file>
+            <file>file:/C:/git/UC8/JavaApplication8/src/modelo/Cliente.java</file>
         </group>
     </open-files>
 </project-private>
